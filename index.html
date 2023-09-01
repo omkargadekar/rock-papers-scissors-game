@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="heading">
+        <h1 class="head">
+          ROCK <br />PAPER <br />
+          SCISSORS
+        </h1>
+        <div class="score">
+          <div class="cs">
+            <p>COMPUTER <br />SCORE</p>
+            <h1 id="computer">0</h1>
+          </div>
+          <div class="ys">
+            <p>YOUR <br />SCORE</p>
+            <h1 id="your">0</h1>
+          </div>
+        </div>
+      </div>
+        <section class="game">
+          <div class="gamee">
+            <div class="up">
+              <button class="choice-btn" data-choice="paper">
+                <div class="choice paper">
+                  <img  src="./images/icon-paper.png" alt="Paper" />
+
+                </div>
+              </button>
+              <img class="line1" src="images/line.png" alt="">
+              <button class="choice-btn" data-choice="scissors">
+                <div class="choice scissors">
+                  <img src="./images/icon-scissors.png" alt="Scissors" />
+                </div>
+              </button>
+              <img class="line2" src="images/line2.png" alt="">
+              <img class="line3" src="images/line3.png" alt="">
+            </div>
+            <div class="down">
+              <button class="choice-btn" data-choice="rock">
+                <div class="choice rock">
+                  <img src="./images/icon-rock.png" alt="Rock" />
+                </div>
+              </button>
+            </div>
+          </div>
+          <div class="rules">
+            <button onclick="togglefun()">RULES</button>
+            
+          </div>
+          <div class="display">
+            <img src="images/Group 4.png" alt="" />
+          </div>
+        </section>
+        <section class="results hidden">
+          <div class="left">
+            <h2 class="results__heading">you picked</h2>
+          
+          <div class="results__result winner"></div>
+          </div>
+          <div class="results__winner ">
+            <div class="results__text"></div>
+
+            <button class="play play-again" onclick="reDirect()">PLAY AGAIN</button>
+          </div>
+          <div class="right">
+            <h2 class="results__heading">pc picked</h2>
+          <div class="results__result"></div>
+          </div>
+
+          <div class="rules">
+            <button onclick="togglefun()">RULES</button>
+            <button id="next" onclick="nextFun()" class="hidden">NEXT</button>
+          </div>
+          <div class="display">
+            <img src="images/Group 4.png" alt="" />
+          </div>
+        </section>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
